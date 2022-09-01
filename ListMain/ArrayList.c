@@ -22,7 +22,7 @@ void LInsert(List * plist, LData data)
 int LFirst(List * plist, LData * pdata)
 {
 	if(plist->numOfData == 0)
-		return FALSE;
+		return False;
 
 	(plist->curPosition) = 0;
 	*pdata = plist->arr[0];
@@ -32,7 +32,7 @@ int LFirst(List * plist, LData * pdata)
 int LNext(List * plist, LData * pdata)
 {
 	if(plist->curPosition >= (plist->numOfData)-1)
-		return FALSE;
+		return False;
 
 	(plist->curPosition)++;
 	*pdata = plist->arr[plist->curPosition];
